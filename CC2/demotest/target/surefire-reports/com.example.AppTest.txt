@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.example.AppTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 64.319 s <<< FAILURE! - in com.example.AppTest
+TestCase1(com.example.AppTest)  Time elapsed: 0.29 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy
+	at com.example.AppTest.TestCase1(AppTest.java:53)
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.Lazy
+	at com.example.AppTest.TestCase1(AppTest.java:53)
+
+TestCase2(com.example.AppTest)  Time elapsed: 10.965 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a title="" class=" " onclick="set_cookie('txlN2__Funny-Story/Emily-Henry_text');" href="/w/funny-story-emily-henry/1143852959?ean=2940159543998" product-title-plp="...">Funny Story</a> is not clickable at point (510, 503). Other element would receive the click: <div id="onetrust-policy-text">...</div>
+  (Session info: chrome=124.0.6367.78)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2594bd314d2c19b4f68cfbe48ba99440, clickElement {id=f.4A1A687EDFCFF09B927811EFE87748C3.d.50ED03CD6EB5DB13B01E1B2EEE222990.e.258}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\welcome\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54306/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2594bd314d2c19b4f68cfbe48ba99440)] -> link text: Funny Story]
+Session ID: 2594bd314d2c19b4f68cfbe48ba99440
+	at com.example.AppTest.TestCase2(AppTest.java:82)
+
+TestCase3(com.example.AppTest)  Time elapsed: 11.688 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="bnmembership"></span> is not clickable at point (545, 497). Other element would receive the click: <div id="onetrust-policy-text">...</div>
+  (Session info: chrome=124.0.6367.78)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e73c1bf0508614a04722afd667cf8a3, clickElement {id=f.F512712B551F7BBC74DAA9C1F6112393.d.E1E4BDE192C54D6BB652AD7B07DB057E.e.109}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\welcome\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54384/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6e73c1bf0508614a04722afd667cf8a3)] -> xpath: //*[@id='footer']/div/dd/div/div/div[1]/div/a[5]/span]
+Session ID: 6e73c1bf0508614a04722afd667cf8a3
+	at com.example.AppTest.TestCase3(AppTest.java:98)
+
